@@ -27,17 +27,17 @@
       "target": "api::task.task",
       "mappedBy": "project"
     },
-    "columns": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::column.column",
-      "mappedBy": "project"
-    },
     "labels": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::label.label",
       "mappedBy": "project"
+    },
+    "columns": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::column.column",
+      "mappedBy": "projects"
     }
   }
 }

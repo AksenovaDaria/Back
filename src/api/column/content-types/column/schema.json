@@ -18,9 +18,9 @@
     "color": {
       "type": "string"
     },
-    "project": {
+    "projects": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::project.project",
       "inversedBy": "columns"
     },
